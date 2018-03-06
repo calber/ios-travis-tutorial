@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode9
+
+script:
+  - xcodebuild test -project YOUR_PROJECT_DIRECTORY.xcodeproj -scheme YOUR_PROJECT_SCHEME -destination "platform=iOS Simulator,name=iPhone 7" -sdk iphonesimulator11.0 CODE_SIGNING_REQUIRED=NO
